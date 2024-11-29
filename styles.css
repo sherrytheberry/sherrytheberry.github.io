@@ -2,19 +2,22 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #dcdbea;
+    background-color: #fff;
     color: #000;
     transition: all 0.3s ease;
 }
+
 header {
     padding: 20px;
     text-align: center;
-    background-color: #292834;
+    background-color: #282c34;
     color: #fff;
 }
+
 header h1 {
     margin: 0;
 }
+
 #mode-toggle {
     background: none;
     border: none;
@@ -23,30 +26,50 @@ header h1 {
     cursor: pointer;
     transition: color 0.3s ease;
 }
-main {
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
     padding: 20px;
 }
 
+.left-column,
+.right-column {
+    padding: 20px;
+    flex: 1;
+}
+
+.left-column {
+    flex: 1 1 35%; 
+    margin-right: 20px;
+}
+
+.right-column {
+    flex: 1 1 60%; 
+}
+
+/* Styling for Sections */
 section {
     margin-bottom: 30px;
 }
 
-footer {
-    background-color: #282834;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
+section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-.logo {
-    height: 15px; 
-    width: auto; 
+#skills ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-/* Dark Mode Styles */
+#skills ul li {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
 body.dark-mode {
-    background-color: #212026;
-    color: #d5d4e4;
+    background-color: #121212;
+    color: #e0e0e0;
 }
 
 body.dark-mode header {
@@ -58,9 +81,32 @@ body.dark-mode footer {
 }
 
 body.dark-mode #mode-toggle {
-    color: #8536f0;
+    color: #f39c12;
 }
 
 body.dark-mode #mode-toggle:hover {
-    color: ##8c0ff1;
+    color: #f1c40f;
+}
+
+footer {
+    background-color: #282c34;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.logo {
+    height: 15px; 
+    width: auto; 
+}
+
+@media (max-width: 768px) {
+    .left-column, .right-column {
+        flex: 1 1 100%;
+        margin-right: 0;
+    }
+
+    .container {
+        flex-direction: column; 
+    }
 }
