@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dcdbea;
+    color: #000;
+    transition: all 0.3s ease;
+}
+header {
+    padding: 20px;
+    text-align: center;
+    background-color: #292834;
+    color: #fff;
+}
+header h1 {
+    margin: 0;
+}
+#mode-toggle {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #282834;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #212026;
+    color: #d5d4e4;
+}
+
+body.dark-mode header {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode footer {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode #mode-toggle {
+    color: #8536f0;
+}
+
+body.dark-mode #mode-toggle:hover {
+    color: ##8c0ff1;
+}
