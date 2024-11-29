@@ -94,10 +94,29 @@ footer {
     padding: 10px;
     text-align: center;
 }
-
+/*Logo*/
 .logo {
     height: 15px; 
     width: auto; 
+}
+
+.logo-container {
+    position: absolute; /*left corner placement*/
+    top: 20px;
+    left: 20px;
+}
+
+.logo-container-footer {
+    position: absolute;
+    bottom: 20px; 
+    left: 20px;
+}
+
+/* Responsive Design: Scale the logo for mobile screens */
+@media (max-width: 768px) {
+    .logo {
+        height: 30px; /* Make the logo smaller on mobile devices */
+    }
 }
 
 @media (max-width: 768px) {
