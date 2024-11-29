@@ -38,6 +38,11 @@ footer {
     text-align: center;
 }
 
+.logo {
+    height: 30px; 
+    width: auto; 
+}
+
 /* Dark Mode Styles */
 body.dark-mode {
     background-color: #212026;
