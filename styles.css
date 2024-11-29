@@ -96,7 +96,7 @@ footer {
 }
 /*Logo*/
 .logo {
-    height: 60px; 
+    height: 80px; 
     width: auto; 
 }
 
@@ -112,10 +112,9 @@ footer {
     left: 20px;
 }
 
-/* Responsive Design: Scale the logo for mobile screens */
 @media (max-width: 768px) {
     .logo {
-        height: 30px; /* Make the logo smaller on mobile devices */
+        height: 30px;
     }
 }
 
